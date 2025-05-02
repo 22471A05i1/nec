@@ -3,6 +3,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	scrollbar-width: none;
 }
 html {
 	font-size: 10px;
@@ -300,7 +301,108 @@ p {
 
 
 /* ===== Skills Section ===== */
+
+
+
+/* ===== Skills Section ===== */
+
+
+/* Skills Section */
 #skills {
+	padding: 80px 20px;
+	background-color: #485563 100%; /* Fixed invalid 100% */
+	text-align: center;
+  }
+  
+  .skills-container {
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+  
+  .skills-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+  }
+  
+  .skill-icon {
+	width: 150px;
+	height: 150px;
+	object-fit: contain;
+	transition: transform 0.3s ease;
+  }
+  
+  .skill-icon:hover {
+	transform: scale(1.1);
+  }
+  
+  #skills .row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 70px;
+	margin-top: 5px;
+  }
+  
+  #skills .col-6 {
+	text-align: center;
+  }
+  
+  #skills p {
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: #333;
+	margin-top: 0px;
+  }
+  
+  /* Certificates Section */
+.certificates-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 50px;
+	margin-top: 0px;
+  }
+  
+  .certificate-item {
+	text-align: center;
+	max-width: 250px;
+  }
+  
+  .certificate-item a {
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 8px;
+	transition: transform 0.3s ease;
+  }
+  
+  .certificate-item a img {
+	width: 100%;
+	height: 140px;
+	margin-top: -30px;
+	border: 2px solid #ffffff;
+	border-radius: 8px;
+	transition: transform 0.3s ease;
+  }
+  
+  .certificate-item a img:hover {
+	transform: scale(1.05);
+  }
+  
+  .certificate-item p {
+	font-size: 1.4rem;
+	color: #fff;
+	font-weight: 500;
+	margin-top: 0px;
+  }
+  
+
+
+
+
+
+/* #skills {
 	padding: 80px 20px;
 	background-color: #f3f3f3;
 	text-align: center;
@@ -337,7 +439,7 @@ p {
 	background-color: #e91e63;
 	color: white;
 	cursor: pointer;
-  }
+  } */
   
 
 
@@ -349,7 +451,7 @@ p {
 	padding: 100px 0;
 }
 #projects .projects-header h1 {
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 }
 #projects .all-projects {
 	display: flex;
@@ -370,6 +472,7 @@ p {
 #projects .project-info {
 	padding: 30px;
 	flex-basis: 50%;
+	max-height: 300px;
 	height: 100%;
 	display: flex;
 	align-items: flex-start;
@@ -392,6 +495,7 @@ p {
 }
 #projects .project-img {
 	flex-basis: 50%;
+	max-height: 300px;
 	height: 300px;
 	overflow: hidden;
 	position: relative;
@@ -423,7 +527,7 @@ p {
 	padding: 100px 20px;
 }
 #about .col-left {
-	width: 250px;
+	width: 350px;
 	height: 360px;
 }
 #about .col-right {
@@ -528,7 +632,7 @@ p {
   
   .contact-form .form-group {
 	display: flex;
-	max-height: 40px;
+	max-height: 30px;
 	flex-direction: column;
   }
   
@@ -707,13 +811,13 @@ p {
 	padding: 50px 20px;
   }
   #about .col-left {
-	width: 600px;
-	height: 400px;
+	width: 550px;
+	height: 460px;
 	padding-left: 60px;
   }
   #about .col-right {
 	flex: 1;
-	padding: 30px;
+	padding: 35px;
 	text-align: left;
   }
   #about .col-right h1 {
@@ -728,7 +832,7 @@ p {
   .about-img::after {
 	content: '';
 	position: absolute;
-	left: -45px;
+	left: -35px;
 	top: 34px;
 	height: 98%;
 	width: 98%;
@@ -754,9 +858,9 @@ p {
   }
   
   /* Education Section */
-  #education {
+  /* #education {
 	background-color:  #485563 100%; /* ✅ White background applied here */
-	padding: 60px 20px;
+	/* padding: 60px 20px;
   }
   #education .education.container {
 	display: flex;
@@ -798,8 +902,8 @@ p {
 	.edu-img img {
 	  margin-bottom: 20px;
 	}
-  }
-  
+  } */
+   */
 
 	/* End About */
 
