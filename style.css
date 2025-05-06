@@ -299,14 +299,6 @@ p {
 
 /* End Hero Section */
 
-
-/* ===== Skills Section ===== */
-
-
-
-/* ===== Skills Section ===== */
-
-
 /* Skills Section */
 #skills {
 	padding: 80px 20px;
@@ -398,51 +390,6 @@ p {
   }
   
 
-
-
-
-
-/* #skills {
-	padding: 80px 20px;
-	background-color: #f3f3f3;
-	text-align: center;
-  }
-  
-  .section-title {
-	font-size: 4.5rem;
-	color: #333;
-	margin-bottom: 40px;
-	position: relative;
-  }
-  
-  .skills-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-	gap: 20px;
-	max-width: 900px;
-	margin: auto;
-  }
-  
-  .skill-box {
-	font-size: 30px;
-	background-color: white;
-	border: 2px solid #e91e63;
-	color: #e91e63;
-	padding: 35px;
-	border-radius: 10px;
-	font-weight: bold;
-	box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-	transition: 0.3s;
-  }
-  
-  .skill-box:hover {
-	background-color: #e91e63;
-	color: white;
-	cursor: pointer;
-  } */
-  
-
-
 /* Projects section */
 #projects .projects {
 	flex-direction: column;
@@ -508,7 +455,7 @@ p {
 	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.7;
+	opacity: 0.1;
 }
 #projects .project-img img {
 	transition: 0.3s ease transform;
@@ -577,6 +524,7 @@ p {
 #contact .contact-items {
 	/* max-width: 400px; */
 	width: 100%;
+	
 }
 #contact .contact-item {
 	width: 80%;
@@ -602,17 +550,45 @@ p {
 	margin-bottom: 10px;
 }
 #contact .contact-info h1 {
-	font-size: 2.5rem;
+	font-size: 3.5rem;
 	font-weight: 500;
 	margin-bottom: 5px;
 }
 #contact .contact-info h2 {
-	font-size: 1.3rem;
+	font-size: 1.7rem;
 	line-height: 2rem;
 	font-weight: 500;
 }
 
 
+#contact .contact-item {
+    position: relative; /* Add this */
+    width: 80%;
+    padding: 60px 20px 30px; /* Add top padding for the icon */
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: 0.3s ease box-shadow;
+}
+
+#contact .icon {
+    position: absolute;  /* Make the icon absolutely positioned */
+    top: 20px;          /* Move it above the card */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #ddd;
+}
 
 /* Contact Form Styling */
 .contact-item.form-box {
@@ -627,6 +603,9 @@ p {
   .contact-form {
 	display: flex;
 	flex-direction: column;
+	margin-top: -15px;
+	margin-bottom: -20px;
+	min-height: 230px;
 	gap: 15px;
   }
   
@@ -640,6 +619,7 @@ p {
   .contact-form textarea {
 	width: 100%;
 	padding: 12px 15px;
+    min-height: 40px;
 	font-size: 1rem;
 	border: 1px solid #ccc;
 	border-radius: 5px;
@@ -663,7 +643,32 @@ p {
   
   .submit-btn:hover {
 	background-color: #0056b3;
-  }
+  }   
+
+  .contact-item.form-box {
+    position: relative;
+    width: 90%;
+    padding: 60px 30px 30px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    background-color: #ffffff;
+}
+
+.contact-item.form-box h2 {
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    color: #333;
+    border: 2px solid #007BFF;
+    border-radius: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    white-space: nowrap; /* This line ensures the text stays on one line */
+}
 /*End contact Section */
 
 /* Footer */
@@ -858,38 +863,7 @@ p {
   }
   
   /* Education Section */
-  /* #education {
-	background-color:  #485563 100%; /* ✅ White background applied here */
-	/* padding: 60px 20px;
-  }
-  #education .education.container {
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
-  }
-  #education .edu-item {
-	display: flex;
-	gap: 20px;
-	margin-bottom: 30px;
-	align-items: center;
-  }
-  .edu-img img {
-	margin-bottom: 400px;
-	width: 180px;
-	height: 120px;
-	object-fit: cover;
-	border-radius: 8px;
-	border: 2px solid crimson;
-  }
-  .edu-info h2 {
-	font-size: 2rem;
-	margin-top: -400px;
-  }
-  .edu-info p {
-	font-size: 1.4rem;
-	margin-bottom: 400px;
-	color: #333;
-  }
+
   
   /* Responsive Design */
   @media (max-width: 768px) {
